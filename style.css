@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+    margin-bottom: 50px
+    /*background-color: #121212; Затемняем фон */
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 0px 10px;
+    text-align: left;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.hero-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: calc(100vh - 80px); /* Учитываем высоту хедера */
+    background-image: url('images/back.jpg');;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.buy-button-container {
+    position: relative;
+}
+
+.buy-button {
+    background-color: #FF0000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: -20px;
+}
+
+.price-button {
+    position: absolute;
+    background-color: #fff;
+    color: #FF0000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 120px;
+}
+
+
+.buy-button:hover{
+    border: 3px solid white; /* Белая рамка */
+}
+
+main {
+     width: 100%;
+}
+
+/* Стили для второго блока */
+
+.features {
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+    padding: 50px 0;
+    background-color: #121212;
+}
+
+.feature {
+    text-align: center;
+     color: #fff;
+}
+
+.feature img {
+    width: 100px;
+    border-radius: 20%; 
+}
+
+.presentation {
+    background-color: #161616;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.presentation h2 {
+    color: #fff;
+}
+
+.video-container {
+    position: relative;
+    margin-left: -80%;
+    width: 1280px; 
+    height: 720px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* фон */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+   pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* отображение окна по центру */
+  }
+}
+/* Стили для блока с контентом окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* Стили заголовка окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}

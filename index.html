@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Whisper Voice Assistant</title>
+</head>
+<body>
+<header>
+    <img src="images/logo.png" alt="Avatar">
+    <div class="header-text">
+        <h1>Whisper Voice Assistant</h1>
+    </div>
+</header>
+
+<section class="hero-section">
+    <div class="buy-button-container">
+        <!--<button class="buy-button" onclick="window.location.href='https://discord.gg/a2MBKXqDpu'">Перейти к покупке</button><br>-->
+        <button class="buy-button" onclick="window.location.href='#openModal'">Перейти к покупке</button><br>
+    </div>
+    <button class="price-button">500₽</button>
+</section>
+<section class="features">
+      <div class="feature">
+        <img src="images/price.png" alt="Низкая цена">
+        <strong><p>Низкая цена</p></strong>
+      </div>
+      <div class="feature">
+        <img src="images/updates.png" alt="Постоянные обновления">
+        <strong><p>Постоянные обновления</p></strong>
+      </div>
+      <div class="feature">
+        <img src="images/support.png" alt="Круглосуточная поддержка">
+        <strong><p>Круглосуточная поддержка</p></strong>
+      </div>
+      <div class="feature">
+        <img src="images/settings.png" alt="Полная настройка">
+        <strong><p>Полная настройка</p></strong>
+      </div>
+    </section>
+<section class="presentation">
+      <h2>Whisper Voice Assistant</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u8GB0bVWv6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+</div>
+<div id="openModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Покупка</h3>
+        <a href="#close" title="Close" class="close">×</a>
+      </div>
+      <div class="modal-body">    
+        <ul>
+         <p>Для покупки отпишите SpectrexWDK:</p>
+         <li><a href="tg://resolve?domain=SpectrexWDK">Telegram</li>
+         <li><a href="https://discord.gg/a2MBKXqDpu">Discord</li>
+         </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
