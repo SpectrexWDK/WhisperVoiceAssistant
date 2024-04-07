@@ -3,18 +3,28 @@ body {
     margin: 0;
     padding: 0;
     background-color: #181818;
-    margin-bottom: 50px
     /*background-color: #121212; Затемняем фон */
 }
 
 header {
-    background-color: #000;
     color: #fff;
     padding: 0px 10px;
     text-align: left;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
+    background: transparent;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header a{
+    margin: 50;
+    margin-right: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
 }
 
 header img {
@@ -24,21 +34,41 @@ header img {
     margin-right: 10px;
 }
 
+.navmenu{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+}
+
 .header-text {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
     flex: 1;
 }
 
 .hero-section {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: calc(100vh - 80px); /* Учитываем высоту хедера */
-    background-image: url('images/back.jpg');;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: calc(100vh - 80px); 
+    background-image: url('images/back.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+}
+
+.hero-section::before {
+    content: "";
+    background-image: url('images/back.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1; 
 }
 
 .download-btn {
@@ -301,6 +331,7 @@ main {
 
 .updates-history{
     background-color: #121212;
+    padding-bottom: 20px;
 }
 
 .updatemess{
