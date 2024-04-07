@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #161616;
+    background-color: #181818;
     margin-bottom: 50px
     /*background-color: #121212; Затемняем фон */
 }
@@ -144,7 +144,7 @@ main {
 
 .feature {
     text-align: center;
-     color: #fff;
+    color: #fff;
 }
 
 .feature img {
@@ -157,7 +157,7 @@ main {
 }
 
 .presentation {
-    background-color: #161616;
+    background-color: #181818;
     text-align: center;
     padding: 20px 0;
     margin-bottom: 50px;
@@ -179,8 +179,6 @@ main {
     width: 100%;
     height: 100%;
 }
-
-
 
 .modal {
     position: fixed; /* фиксированное положение */
@@ -293,4 +291,31 @@ main {
     flex: 1 1 auto;
     padding: 15px;
     overflow: auto;
+}
+
+.updc{
+    text-align: center;
+    color: #fff;
+    padding-top: 4px;
+}
+
+.updates-history{
+    background-color: #121212;
+}
+
+.updatemess{
+    margin-left: 40px;
+}
+
+.updatemess h2{
+    color: #fff;
+}
+
+.updatemess h3{
+    color: #a9a9a9;
+}
+
+.updateblock{
+    margin-left: 40px;
+    margin-top: -7px;
 }
