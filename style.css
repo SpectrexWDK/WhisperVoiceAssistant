@@ -41,6 +41,34 @@ header img {
     z-index: 1;
 }
 
+.download-btn {
+    background-color: #3CB371;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.download-btn {
+    position: absolute;
+    background-color: #B22222;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: -90px;
+    margin-left: 65px;
+}
+
 .buy-button {
     background-color: #3CB371;
     color: white;
@@ -92,7 +120,10 @@ header img {
 }
 
 .buy-button:hover{
-    border: 3px solid white; /* Белая рамка */
+    background-color: #92000A;
+}
+.download-btn:hover{
+    background-color: #92000A;
 }
 
 main {
