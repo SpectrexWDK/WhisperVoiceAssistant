@@ -42,7 +42,7 @@ header img {
 }
 
 .buy-button {
-    background-color: #4CAF50;
+    background-color: #3CB371;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -60,7 +60,7 @@ header img {
 }
 
 .buy-button {
-    background-color: #FF0000;
+    background-color: #B22222;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -76,18 +76,20 @@ header img {
 .price-button {
     position: absolute;
     background-color: #fff;
-    color: #FF0000;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 26px;
+    font-size: 24px;
     border: none;
     cursor: pointer;
     border-radius: 50px;
     margin-top: 120px;
 }
 
+#green{
+	color: #2E8B57;
+}
 
 .buy-button:hover{
     border: 3px solid white; /* Белая рамка */
@@ -101,10 +103,12 @@ main {
 
 .features {
     display: flex;
-     justify-content: space-around;
-     align-items: center;
+    justify-content: space-around;
+    align-items: center;
     padding: 50px 0;
     background-color: #121212;
+    text-align: center;
+    color: #fff;
 }
 
 .feature {
@@ -115,6 +119,10 @@ main {
 .feature img {
     width: 100px;
     border-radius: 20%; 
+    text-align: center;
+}
+.feauture h2 {
+    color: #fff;
 }
 
 .presentation {
