@@ -214,7 +214,7 @@ main {
 .updc{
     text-align: center;
     color: #fff;
-    padding-top: 4px;
+    padding-top: 6px;
 }
 
 .updates-history{
@@ -234,7 +234,23 @@ main {
     color: #a9a9a9;
 }
 
-.updateblock{
+/*.updateblock{
+     margin-left: 40px; 
+}*/
+
+.commblocks{
     margin-left: 40px;
-    margin-top: -7px;
+    column-count: 3;
+    column-fill: balance;
+    padding-top: 20px;
 }
+
+.commblocks h2{
+    color: #fff;
+}
+
+.commblocks h3{
+    color: #a9a9a9;
+    margin: 0;
+}
+
