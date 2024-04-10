@@ -228,10 +228,12 @@ main {
 
 .updatemess h2{
     color: #fff;
+    font-size: 1.3em;
 }
 
 .updatemess h3{
     color: #a9a9a9;
+    font-size: 1em;
 }
 
 /*.updateblock{
