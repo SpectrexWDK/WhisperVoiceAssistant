@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	<title>FAQ - Ответы</title>
+</head>
+<body>
+	<header>
+    <img src="../images/logo.png" alt="Avatar">
+    <div class="header-text">
+      <a href="../index.html"><h1>Whisper Voice Assistant</h1></a>
+      <ul class="navmenu">
+        <a href="../index.html">На главную</a>
+      </ul>
+    </div>
+</header>
+
+<section class="faq-section">
+  <div class="updc"><h2>FAQ</h2></div>
+  <div class="questions-block">
+
+    <div class="question" onclick="toggleAnswer(this)">
+      <h3>Как правильно устанавливать Whisper</h3>
+      <h4>После покупки лицензии:<br>
+      1. Скачайте архив<br>
+      2. Всё содержимое перетяните в папку с названием "Whisper" (название папки важно!)<br>
+      3. Настройте помощника на свой вкус<br>
+      4. Запустить Whisper.exe и не забудьте добавить ярлык в автозапуск</h4>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      <h3>Непонятная ошибка при запуске</h3>
+      <h4>1. Ошибка устройства<br><br>
+        Убедитесь, что ваши микрофон и наушники подключены и исправно работают<br><br>
+        2. Ошибка доступа к файлу Logs.txt<br><br>
+        Если вы столкнулись с этой ошибкой, наверняка вы переместили папку помощника в защищённую Windows папку<br>
+        Для исправления этой ошибки, создайте ярлык, который будет открывать помощника от имени администратора<br>
+        Для этого нажмите ПКМ по ярлыку >> Совместимость >> Запускать от имени администратора</li><br><br>
+        <img src="../images/articles/admin1.png"><br>
+      </h4>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      <h3>Помощник не распознаёт мои фразы</h3>
+      <h4>1. Убедитесь то что у вас хороший микрофон<br><br>
+          2. Отключите все устройства записи звука, кроме активного микрофона<br>
+          Для этого<br><br>
+          <li>нажмите пкм по звуку в трее</li><br>
+          <img src="../images/articles/sounddevice1.png"><br><br>
+          <li>Откройте панель управления звуком</li><br>
+          <img src="../images/articles/sounddevice2.png"><br><br>
+          <li>В меню записи выключите все устройства, кроме активного микрофона</li><br>
+          <img src="../images/articles/sounddevice3.png"><br><br>
+        </h4>
+    </div>
+
+
+  </div>
+</section>
+
+  <script type="text/javascript">
+
+    function toggleAnswer(question) {
+      var answer = question.querySelector("h4");
+      answer.classList.toggle("active");
+    }
+
+  </script>
+</body>
+</html>

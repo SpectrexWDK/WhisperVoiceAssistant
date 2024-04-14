@@ -19,12 +19,8 @@ header {
 }
 
 header a{
-    margin: 50;
-    margin-right: 20px;
-    padding: 10px;
     text-decoration: none;
     color: #fff;
-    font-size: 25px;
 }
 
 header img {
@@ -32,6 +28,29 @@ header img {
     height: 70px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.lictext{
+    display: flex;
+    justify-content: 
+}
+
+.hero-section h3{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.navmenu a{
+    margin: 50;
+    margin-right: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
 }
 
 .navmenu{
@@ -218,7 +237,8 @@ main {
 }
 
 .updates-history{
-    background-color: #121212;
+    margin-top: 20px;
+    background-color: #181818;
     padding-bottom: 20px;
 }
 
@@ -242,9 +262,13 @@ main {
 
 .commblocks{
     margin-left: 40px;
-    column-count: 3;
+    column-count: 2;
     column-fill: balance;
     padding-top: 20px;
+}
+
+.aval-commands{
+    padding-bottom: 20px;
 }
 
 .commblocks h2{
@@ -256,3 +280,118 @@ main {
     margin: 0;
 }
 
+.newupdates{
+    margin-bottom: 20px;
+}
+
+.newupdates h2{
+    color: #fff;
+}
+
+.newupdates h3{
+    color: #a9a9a9;
+    margin-top: -4px;
+    margin-left: 40px;
+}
+
+.newupblock{
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+.article-section{
+    color: #a9a9a9;
+}
+
+.btnsblock{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.article-btn{
+    margin: 25px;
+    border: 3px solid gray;
+    padding: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btnsblock a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#article-image{
+    width: 120px;
+    height: 120px;
+}
+
+/*--------------------[FAQ]----------------------*/
+
+.questions-block{
+    margin-left: 40px;
+}
+
+.question{
+    background-color: #121212;
+    padding: 1px;
+    border-radius: 40px;
+    width: 90%;
+    margin: 10px;
+}
+
+.question h3{
+    color: #fff;
+    margin-left: 15px;
+}
+
+.question h4{
+    color: #a9a9a9;
+    margin-left: 35px;
+}
+
+.question h4 {
+  display: none;
+}
+
+.question h4.active {
+  display: block;
+}
+
+.question img{
+    border-radius: 20px;
+}
+
+
+/*-------------------------[Contact us]-------------------------*/
+
+#contact {
+  background-color: #181818;
+  padding: 50px 0;
+}
+
+.contact-block{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-block h2{
+    color: #fff;
+}
+
+.contact-block button {
+    background-color: #B22222;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
