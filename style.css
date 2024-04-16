@@ -32,7 +32,8 @@ header img {
 
 .lictext{
     display: flex;
-    justify-content: 
+    text-align: right;
+    margin-bottom: 10px;
 }
 
 .hero-section h3{
