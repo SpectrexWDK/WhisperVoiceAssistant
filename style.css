@@ -372,6 +372,11 @@ main {
     border-radius: 20px;
 }
 
+.question li{
+    color: #fff;
+    font-size: 20px;
+    margin: 20px;
+}
 
 /*-------------------------[Contact us]-------------------------*/
 
