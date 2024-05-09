@@ -28,6 +28,10 @@ header img {
     margin-right: 10px;
 }
 
+.question img{
+    border: 2px solid white;
+}
+
 .lictext{
     display: flex;
     text-align: right;
